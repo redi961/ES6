@@ -1,9 +1,14 @@
-# E자바스크립트
-## CSS
- + 가변길이 : vh, vw
- + Flex 박스를 이용한 가운데 배치
-  + 중심축 align-items: center;
-  + 반대축 justify-content: center;
-  + 중심축 결정 (위에서 아래) -> flex-direction : col;
-  + 중심축 결정 (왼쪽에서 오른쪽) -> flex-direction : row;
+# 자바스크립트
+## 자바스크립트 
+  + <Script></Script> 태그 사용
+    + head 태그 영역
+    + body 태그 영역
+ -> 어디든 사용가능함
+  + 외부
+    + src 속성 참조 
 
+  + ES 6 -> 
+   + 함수 선언 // Const 이름 = (변수) => {}
+    + 화살표함수 사용
+    + 물결표 를 누르면 나오는`(백틱) 사용
+    
