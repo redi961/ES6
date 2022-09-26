@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-family: 'Dongle', sans-serif;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #62597c;
+    color: white;
+    font-size: 2em;
+    position: sticky;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+    display: inline-block;
+    width: 100%;
+    margin: 1vh;
+    width: 50vh;
+    max-width: 200px;
+    height: 20vh;
+    max-height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a4263;
+    color: white;
+    font-size: 1rem;
+}
+button:active,
+button:hover {
+    background-color: #e8ddff;
+    color: black;
+}
