@@ -12,11 +12,14 @@ const funPrint = (n) => {
     console.log(`버튼${n}`)
 }
 
-//변수 console.log(x);
+//변수
+
+/*
+console.log(x);
 let x = 100;
 x = 100 * 2;
 console.log(x);
-
+ */
 /* JQuery
 $document.ready() {
 
@@ -47,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //결과 NodeList
     const bts4 = document.querySelectorAll(".bt1");
-    console.log(bts4);
+    /*   console.log(bts4); */
 
     /*
     //내부의 HTML 문구를 모두 긁어옴
@@ -58,10 +61,32 @@ document.addEventListener("DOMContentLoaded", () => {
     */
 
     //반복문 for 변수이므로 let을 사용 (java는 let or const 둘중 하나만 사용함)
-    for (let i = 0; i < bts4.length; i++) {
+    /* for (let i = 0; i < bts4.length; i++) {
         console.log(typeof(bts4[i]));
         bts4[i].innerHTML =`mybutton${i+1}`
         console.log(bts4[i].innerHTML);
-    }
+    } */
 
+    // 반복문 for in => key 값만 추출함
+    /*     for (let i in bts4) {
+        console.log(i);
+    } */
+
+    // foreach => 메소드형식 중간에 종료할 수 없음
+    /*    bts4.forEach((item) => {
+        console.log(item.innerHTML);
+    });
+
+    bts4.forEach((item, idx) => {
+        console.log(`${idx} : ${item.innerHTML}`);
+    }); */
+
+    // 반복문 for .. of 
+    for(let item of bts4) {
+        console.log(item.innerHTML);
+    }
+    for(let [idx, item] of bts4.entries()) {
+        console.log(`${idx} : ${item.innerHTML}`);
+        break;
+    }
 });
