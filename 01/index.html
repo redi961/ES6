@@ -6,20 +6,19 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, user-scalable=no">
         <!--스타일 시트-->
-        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="./styles/index.css">
         <!--자바스크립트-->
         <!--위치1 <script> // alert("Hello world!"); // console.log("Hello world");
         </script> -->
-        <script rel="javascript" src="./Script/index.js"></script>
-
+        <script rel="javascript" src="./Script/dom.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
             crossorigin="crossorigin">
         <link
-            href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&display=swap"
-            rel="stylesheet">
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&display=swap">
         <title>JS PWA</title>
     </head>
     <body>
@@ -30,9 +29,12 @@
             <!-- 여기도 가능 <script> alert("Hello world!"); console.log("Hello world");
             </script> -->
             <main id="content">
+                <section id="msg">
+                    <p>ttttt</p>
+                </section>
                 <section id="bt">
-                    <button class="bt1" onclick="funPrint(1)"><span>버튼1</span></button>
-                    <button class="bt1" onclick="funPrint(2)"><span>버튼2</span></button>
+                    <button class="bt1" onclick="show();">버튼</button>
+                    <!-- <button class="bt1" onclick="funPrint(2)">버튼2</button> -->
                 </section>
             </main>
         </div>
