@@ -10,7 +10,7 @@
         <!--자바스크립트-->
         <!--위치1 <script> // alert("Hello world!"); // console.log("Hello world");
         </script> -->
-        <script rel="javascript" src="./Script/dom.js"></script>
+        <script rel="javascript" src="./Script/exam.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link
             rel="preconnect"
@@ -24,16 +24,40 @@
     <body>
         <div id="root">
             <header>
-                <h1>자바스크립트 연습</h1>
+                <h1>주사위 게임</h1>
             </header>
             <!-- 여기도 가능 <script> alert("Hello world!"); console.log("Hello world");
             </script> -->
             <main id="content">
                 <section id="msg">
-                    <p>ttttt</p>
+                    <label class="num_radio">
+                        <input type="radio" name="fruit" value="1">
+                        <span>1</span>
+                    </label>
+                    <label class="num_radio">
+                        <input type="radio" name="fruit" value="2">
+                        <span>2</span>
+                    </label>
+                    <label class="num_radio">
+                        <input type="radio" name="fruit" value="3">
+                        <span>3</span>
+                    </label>
+                    <label class="num_radio">
+                        <input type="radio" name="fruit" value="4">
+                        <span>4</span>
+                    </label>
+                    <label class="num_radio">
+                        <input type="radio" name="fruit" value="5">
+                        <span>5</span>
+                    </label>
+                    <label class="num_radio">
+                        <input type="radio" name="fruit" value="6">
+                        <span>6</span>
+                    </label>
                 </section>
+                <section id="formSection"></section>
                 <section id="bt">
-                    <button class="bt1" onclick="show();">버튼</button>
+                    <button class="bt1" onclick="show();">주사위</button>
                     <!-- <button class="bt1" onclick="funPrint(2)">버튼2</button> -->
                 </section>
             </main>

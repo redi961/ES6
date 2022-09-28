@@ -2,6 +2,23 @@
     margin: 0;
     padding: 0;
 }
+.num_radio input[type="radio"] {
+    display: none;
+}
+
+.num_radio input[type="radio"] + span {
+    display: inline-block;
+    padding: 15px 10px;
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer
+}
+.num_radio input[type="radio"]:checked + span {
+    background-color: #113a6b;
+    color: #ffffff;
+}
+
 header {
     font-family: 'Dongle', sans-serif;
     height: 10vh;
@@ -23,15 +40,12 @@ main {
 }
 main > section {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     margin : 2vh;
 }
-
-
-
-button, .divMsg {
+button  {
     display: inline-block;
     width: 100%;
     margin: 1vh;
@@ -44,7 +58,12 @@ button, .divMsg {
     background-color: #4a4263;
     color: white;
     font-size: 1rem;
+    text-align: center;
 }
+.divMsg {
+    margin : 1vh;
+}
+
 #bt {
     display: flex;
     align-items: center;
