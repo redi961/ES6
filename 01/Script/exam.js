@@ -1,6 +1,10 @@
 const show = () => {
   const radios = document.querySelector("#radioSection")
+  const baseMent = document.querySelector("#ment")
+
   radios.style.display = 'none';
+  baseMent.style.display = 'none';
+  
   // 라디오버튼 밸류값 추출
   let r_value = document.querySelector('input[class="diceRadio"]:checked').value;
 /*    for (let item of radios) {
