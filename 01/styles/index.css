@@ -51,9 +51,13 @@ main > section {
     justify-content: center;
     margin: 2vh;
 }
-#radioSection {
-    border: solid;
-    border-width: 2px;
+legend {
+    font-family: 'Dongle', sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+fieldset {
+    padding: 5vh;
 }
 
 #diceSection {
