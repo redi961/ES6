@@ -1,12 +1,36 @@
-function getRandomInt(min, max) {
-  //Ceil -> 주어진 숫자보다 크거나 같은 숫자 중 가장 작은 숫자를 integer 로 반환
-  min = Math.ceil(min);
-  //Floor -> 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 const show = () => {
-  const radios = document.querySelector("#msg")
+  const radios = document.querySelector("#radioSection")
   radios.style.display = 'none';
+  // 라디오버튼 밸류값 추출
+  let r_value = document.querySelector('input[class="diceRadio"]:checked').value;
+/*    for (let item of radios) {
+    console.log(`radio2 : ${item.value}`);
+    break;
+  } */
+  let tag = "";
+  let tag2 = "";
+  let ment = "";
+  
+  const imgs = document.querySelector("#diceSection")
+  const ran = Math.floor (Math.random()*6)+1
+   tag = tag + `<div class="divMsg"><img src="./image/${ran}.png" class = "msgImg"}"></div>` 
+   imgs.innerHTML = tag 
+   
+
+    if (ran == r_value) {
+      tag2 = tag2 + `<div class="divMsg"><img src="./image/o.png" class = "msgImg"}"></div>`
+      ment = ment + `<h2> 성공!! </h2>`
+      console.log ("일치");
+    }else {
+      tag2 = tag2 + `<div class="divMsg"><img src="./image/x.png" class = "msgImg"}"></div>`
+      ment = ment + `<h2> 실패!! </h2>`
+      console.log ("불일치");
+     }
+    
+     imgs.innerHTML += tag2
+     imgs.innerHTML += ment  
+
+    console.log(ran);
+    console.log(r_value);
+
 }
