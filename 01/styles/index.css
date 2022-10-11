@@ -108,3 +108,14 @@ button:hover {
     background-color: #e8ddff;
     color: black;
 }
+
+#btn2 {
+    display: none;
+}
+section > h2 {
+    text-align: center;
+}
+.divMsg {
+    align-items: center;
+    justify-items: center;
+}

@@ -1,10 +1,16 @@
+const dispDom = (rSection, bt1p, bt2p, images) => {
+  //DOM 제어 
+  document.getElementById("radioSection").style.display = rSection;
+  document.getElementById("btn1").style.display = bt1p;
+  document.getElementById("btn2").style.display = bt2p;
+  document.getElementById("diceSection").style.display = images;
+}
+
+
+
 const show = () => {
-  const radios = document.querySelector("#radioSection")
-  const baseMent = document.querySelector("#ment")
-
-  radios.style.display = 'none';
-  baseMent.style.display = 'none';
-
+  
+  dispDom("none", "none", "block", "block");
   // 라디오버튼 밸류값 추출
   let r_value = document.querySelector('input[class="diceRadio"]:checked').value;
 /*    for (let item of radios) {
@@ -36,9 +42,13 @@ const show = () => {
     
      imgs.innerHTML += tag2
      imgs.innerHTML += ment  
-     bt.innerText = "재시도"
+    
 
     console.log(ran);
     console.log(r_value);
 
+}
+
+const restart = () => {
+  dispDom ("block", "block", "none", "none")
 }
